@@ -58,7 +58,7 @@ def _run_loop(fake_files):
 
     for i in range(fake_files):
         # "Saving" a randomly named file
-        _save_file(f"{random.choice(prefixes)}{i+1}{random.choice(extensions)}", loading_bar)
+        loading_bar = _save_file(f"{random.choice(prefixes)}{i+1}{random.choice(extensions)}", loading_bar)
 
 
 def _main():
